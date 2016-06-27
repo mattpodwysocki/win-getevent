@@ -1,0 +1,34 @@
+{
+  "name": "win-getevent",
+  "version": "1.0.0",
+  "description": "A Node.js wrapper for the PowerShell Win-GetEvent CmdLet",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape test/**/*.js | tap-spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mattpodwysocki/win-getevent.git"
+  },
+  "keywords": [
+    "PowerShell",
+    "Win-GetEvent",
+    "ETW",
+    "EventLog"
+  ],
+  "author": "Matthew Podwysocki",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mattpodwysocki/win-getevent/issues"
+  },
+  "homepage": "https://github.com/mattpodwysocki/win-getevent#readme",
+  "devDependencies": {
+    "babel-eslint": "^6.1.0",
+    "eslint": "^2.13.1"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "engineStrict": true,
+  "os": ["win32"]
+}
