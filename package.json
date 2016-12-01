@@ -1,6 +1,6 @@
 {
   "name": "win-getevent",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A Node.js wrapper for the PowerShell Win-GetEvent CmdLet",
   "main": "index.js",
   "scripts": {
