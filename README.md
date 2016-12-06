@@ -19,6 +19,8 @@ const WinEventEmitter = require('win-getevent').WinEventEmitter;
 
 const winEmitter = new WinEventEmitter({
   providers: ['MMicrosoft-Windows-GroupPolicy'],
+  // or use LogName filter, defaults to 'System','Setup','Application','Security'
+  // logNames: ['Application']
   frequency: 1000 /* ms */
 });
 
@@ -46,7 +48,8 @@ winEmitter.stop();
 ```
 
 The options for creating a new `WinEventEmitter` are as follows:
-- `providers`: `Array<string>` - An array of provider names.  If not specified, defaults to `['Microsoft-Windows-DNS-Client']`.
+- `providers`: `Array<string>` - An array of provider names.  If not specified, logNames defaults apply.
+- `logNames`: `Array<string>` - An array of LogName strings.  If not specified, defaults to `['System','Security','Application','Setuo']`.
 - `frequency`: `Number`: - The polling frequency in milliseconds to query the underlying system.  If not specified, defaults to `10000` or 10 seconds.
 - `maxEvents`: `Number` - The maximum number of events to receive in one batch.  If not specified, defaults to `100`.
 - `startTime`: `Date` - The start time for querying `Get-WinEvent`. If not specified, defaults to now, `new Date()`.
