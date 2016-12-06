@@ -49,7 +49,7 @@ winEmitter.stop();
 
 The options for creating a new `WinEventEmitter` are as follows:
 - `providers`: `Array<string>` - An array of provider names.  If not specified, logNames defaults apply.
-- `logNames`: `Array<string>` - An array of LogName strings.  If not specified, defaults to `['System','Security','Application','Setuo']`.
+- `logNames`: `Array<string>` - An array of LogName strings.  If not specified, defaults to `['System','Security','Application','Setup']`.
 - `frequency`: `Number`: - The polling frequency in milliseconds to query the underlying system.  If not specified, defaults to `10000` or 10 seconds.
 - `maxEvents`: `Number` - The maximum number of events to receive in one batch.  If not specified, defaults to `100`.
 - `startTime`: `Date` - The start time for querying `Get-WinEvent`. If not specified, defaults to now, `new Date()`.
@@ -85,7 +85,7 @@ Please conform to our settings in our ESLint and EditorConfig settings.
 
 The MIT License (MIT)
 
-Copyright (c) 2016 Matthew Podwysocki
+Copyright (c) 2016-Present Matthew Podwysocki
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
